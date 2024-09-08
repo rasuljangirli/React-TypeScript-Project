@@ -9,6 +9,7 @@ const initialState: TodoInitialState = {
 export const TodoSlice = createSlice({
   name: "counter",
   initialState,
+  
   reducers: {
     createTodo: (state: TodoInitialState, action: PayloadAction<TodoType>) => {
       state.todos = [...state.todos, action.payload];
